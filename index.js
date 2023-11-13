@@ -6,7 +6,7 @@ const commands = require('./const')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
 bot.start((ctx) => {
-  const keyboard = Markup.inlineKeyboard([
+  const keyboard = Markup.keyboard([
     Markup.button.url('Google', 'https://www.google.com'),
     Markup.button.callback('Click me', 'button_clicked'),
   ]);
